@@ -397,6 +397,7 @@ a {
   fill: var(--color-light);
   background-color: var(--color-brand);
   border-radius: 50%;
+  outline: none;
 }
 .link-social:not(:last-child) {
   margin-right: 10px;
@@ -454,6 +455,7 @@ a {
 .link-logo:focus,
 .link-logo:hover {
   fill: var(--color-brand);
+  outline: none;
   border: 1px solid var(--color-brand);
   border-radius: 4px;
 }
@@ -698,6 +700,7 @@ a {
 
 .social-page:focus,
 .social-page:hover {
+  outline: none;
   background-color: var(--color-brand);
   border-radius: 50%;
 }
@@ -718,7 +721,8 @@ a {
 }
 
 .footer-label {
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 
   font-weight: 700;
   color: var(--color-light);
@@ -728,6 +732,7 @@ a {
 .footer-input {
   width: 358px;
   height: 50px;
+  margin-top: 20px;
   padding: 15px 16px;
 
   border: 1px solid var(--color-input-footer);
@@ -749,6 +754,7 @@ a {
 }
 
 .footer-input:focus {
+  outline: none;
   border: 1px solid var(--color-brand);
   border-radius: 4px;
 }
@@ -883,20 +889,20 @@ textarea {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-close:focus,
-.icon-close:hover {
+.modal-button:focus,
+.modal-button:hover {
   fill: var(--color-brand);
 }
 
 .form {
-  margin: 40px;
+  padding: 40px;
   width: 100%;
 }
 
 .modal-title {
+  margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  margin-bottom: 12px;
 }
 
 .form-group {
@@ -910,11 +916,8 @@ textarea {
   color: var(--color-secondary);
 }
 
-.form-group label {
-  margin-bottom: 4px;
-}
-
 .form-group input {
+  margin-top: 4px;
   margin-bottom: 10px;
   padding-top: 12px;
   padding-right: 12px;
@@ -936,6 +939,7 @@ textarea {
   width: 448px;
   height: 120px;
   padding: 12px;
+  margin-top: 4px;
   margin-bottom: 20px;
 
   border: 1px solid var(--color-modal-border);
@@ -967,6 +971,7 @@ textarea {
 
 .rules {
   text-decoration: underline;
+  color: var(--color-brand);
 }
 
 .send {
@@ -1000,6 +1005,8 @@ textarea {
 }
 
 .input {
+  outline: none;
+
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1024,6 +1031,7 @@ textarea {
 }
 
 .input:focus {
+  outline: none;
   border: 1px solid var(--color-brand);
   border-radius: 4px;
 }
@@ -1035,6 +1043,8 @@ textarea {
 
 .checkbox-hidden {
   position: absolute;
+  top: -100%;
+  left: 0;
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -1068,4 +1078,10 @@ textarea {
   background-color: var(--color-brand);
   background-origin: border-box;
   border-color: var(--color-brand);
+}
+
+.checkbox-hidden:focus + .icon-check {
+  outline: none;
+  border: 2px solid var(--color-brand);
+  border-radius: 2px;
 }
