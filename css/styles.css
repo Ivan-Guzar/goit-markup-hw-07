@@ -910,6 +910,8 @@ textarea {
   display: flex;
   flex-direction: column;
 
+  margin-bottom: 10px;
+
   text-align: left;
   font-size: 12px;
   letter-spacing: 0.01em;
@@ -918,7 +920,7 @@ textarea {
 
 .form-group input {
   margin-top: 4px;
-  margin-bottom: 10px;
+
   padding-top: 12px;
   padding-right: 12px;
   padding-bottom: 12px;
