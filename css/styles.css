@@ -709,9 +709,6 @@ a {
 .form-sing-up {
   display: flex;
   align-items: flex-end;
-
-  margin-top: 23px;
-  margin-bottom: 23px;
   margin-left: 93px;
 }
 
@@ -1015,10 +1012,10 @@ textarea {
 }
 .modal-icon {
   position: absolute;
-  top: 58%;
+  top: 74%;
   left: 12px;
 
-  transform: translateY(-58%);
+  transform: translateY(-74%);
   display: inline-block;
   width: 18px;
   height: 18px;
