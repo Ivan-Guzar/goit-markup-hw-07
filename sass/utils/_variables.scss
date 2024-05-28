@@ -26,3 +26,9 @@ $colors: (
     @return map-get($colors, $key);
 }
 
+$font-primary: 'Roboto',
+sans-serif;
+
+$font-logo: 'Raleway',
+sans-serif;
+
